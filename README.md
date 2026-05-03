@@ -1,4 +1,4 @@
-# Snake: Apple vs Rock
+# Mohammad-Shaif-Snake game
 
 A simple accessible browser game:
 
