@@ -1,10 +1,11 @@
 # Mohammad-Shaif-Snake game
 
-A simple accessible browser game:
+A simple accessible browser game (keyboard + touch controls):
 
 - Eat apples to gain **+1** point.
 - Hit rocks and lose **-1** point.
 - Reach **12 points** to win.
+- Works with Arrow keys/WASD and on-screen direction buttons.
 
 ## Run locally
 

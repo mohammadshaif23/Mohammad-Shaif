@@ -10,7 +10,8 @@
     <main class="container">
       <h1>Mohammad-Shaif-Snake game</h1>
       <p id="instructions">
-        Use <kbd>Arrow keys</kbd> or <kbd>WASD</kbd> to move. Eat
+        Use <kbd>Arrow keys</kbd> or <kbd>WASD</kbd> to move. On touch devices,
+        use the direction buttons below the board. Eat
         <strong>apples (+1)</strong>, avoid <strong>rocks (-1)</strong>. Reach
         <strong>12 points</strong> to win.
       </p>
@@ -31,6 +32,13 @@
           aria-describedby="instructions"
         ></canvas>
       </div>
+
+      <section class="controls" aria-label="Touch controls">
+        <button class="dir up" type="button" data-dir="up" aria-label="Move up">↑</button>
+        <button class="dir left" type="button" data-dir="left" aria-label="Move left">←</button>
+        <button class="dir down" type="button" data-dir="down" aria-label="Move down">↓</button>
+        <button class="dir right" type="button" data-dir="right" aria-label="Move right">→</button>
+      </section>
 
       <p id="live" class="sr-only" aria-live="polite"></p>
       <p id="message" class="message" aria-live="polite"></p>

@@ -20,6 +20,11 @@ let best = Number(localStorage.getItem('snakeBest') || 0);
 let tickId;
 let gameOver;
 
+function queueMove(move) {
+  if (move.x === -direction.x && move.y === -direction.y) return;
+  pendingDirection = move;
+}
+
 function randomCell(excluded = []) {
   while (true) {
     const pos = {
@@ -155,8 +160,19 @@ window.addEventListener('keydown', (e) => {
   const move = keyMap[e.key] || keyMap[e.key.toLowerCase()];
   if (!move) return;
 
-  if (move.x === -direction.x && move.y === -direction.y) return;
-  pendingDirection = move;
+  queueMove(move);
+});
+
+document.querySelectorAll('[data-dir]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const map = {
+      up: { x: 0, y: -1 },
+      down: { x: 0, y: 1 },
+      left: { x: -1, y: 0 },
+      right: { x: 1, y: 0 },
+    };
+    queueMove(map[btn.dataset.dir]);
+  });
 });
 
 restartBtn.addEventListener('click', resetGame);
