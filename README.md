@@ -32,3 +32,11 @@ Open `index.html` in your browser.
 - Move with Arrow keys/WASD (page should not scroll while using arrows).
 - Use on-screen touch buttons on mobile.
 - Confirm apples add +1, rocks subtract -1, and game ends at 12 points.
+
+
+## If the site is not updating
+
+1. Commit your latest changes.
+2. Push to the same branch configured in **Settings → Pages** (usually `main`).
+3. Wait 1-3 minutes and refresh the live URL with a hard refresh (`Ctrl+Shift+R`).
+4. Check the **Actions** tab for deployment status if updates still do not appear.
