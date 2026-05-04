@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad-Shaif-Snake game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Mohammad-Shaif-Snake game</h1>
+      <p id="instructions">
+        Use <kbd>Arrow keys</kbd> or <kbd>WASD</kbd> to move. On touch devices,
+        use the direction buttons below the board. Eat
+        <strong>apples (+1)</strong>, avoid <strong>rocks (-1)</strong>. Reach
+        <strong>12 points</strong> to win.
+      </p>
+
+      <section class="hud" aria-label="Game status">
+        <p><strong>Score:</strong> <span id="score">0</span></p>
+        <p><strong>Best:</strong> <span id="best">0</span></p>
+        <button id="restart" type="button">Restart Game</button>
+      </section>
+
+      <div class="board-wrap">
+        <canvas
+          id="game"
+          width="480"
+          height="480"
+          role="img"
+          aria-label="Snake game board"
+          aria-describedby="instructions"
+        ></canvas>
+      </div>
+
+      <section class="controls" aria-label="Touch controls">
+        <button class="dir up" type="button" data-dir="up" aria-label="Move up">↑</button>
+        <button class="dir left" type="button" data-dir="left" aria-label="Move left">←</button>
+        <button class="dir down" type="button" data-dir="down" aria-label="Move down">↓</button>
+        <button class="dir right" type="button" data-dir="right" aria-label="Move right">→</button>
+      </section>
+
+      <p id="live" class="sr-only" aria-live="polite"></p>
+      <p id="message" class="message" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
