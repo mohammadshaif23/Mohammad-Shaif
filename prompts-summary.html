@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Prompt Summary</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f8fa;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --border: #d1d5db;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f172a;
+          --card: #111827;
+          --text: #e5e7eb;
+          --muted: #9ca3af;
+          --border: #374151;
+        }
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+      h1 { margin-bottom: 0.25rem; }
+      .subtitle { color: var(--muted); margin-top: 0; }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1rem 1.25rem;
+        margin-top: 1rem;
+      }
+      .label {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--muted);
+        margin-bottom: 0.4rem;
+      }
+      blockquote {
+        margin: 0;
+        padding-left: 0.8rem;
+        border-left: 4px solid var(--border);
+      }
+      footer {
+        margin-top: 2rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      code {
+        background: rgba(127, 127, 127, 0.12);
+        padding: 0.1rem 0.35rem;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Project Prompt Summary</h1>
+      <p class="subtitle">Collected prompts available in this project context and their results.</p>
+
+      <section class="card">
+        <div class="label">Prompt</div>
+        <blockquote>
+          “Can you collect all the prompts I have put here for this project and give a short description on the results under each prompt. And then make it a webpage to upload to be part of the website.”
+        </blockquote>
+      </section>
+
+      <section class="card">
+        <div class="label">Result</div>
+        <p>
+          Created this webpage to summarize prompts and outcomes for the project.
+          In the current repository context, this is the only prompt available to summarize.
+        </p>
+      </section>
+
+      <footer>
+        File: <code>prompts-summary.html</code> &middot; Ready to upload as part of your website.
+      </footer>
+    </main>
+  </body>
+</html>
