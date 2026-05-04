@@ -160,6 +160,7 @@ window.addEventListener('keydown', (e) => {
   const move = keyMap[e.key] || keyMap[e.key.toLowerCase()];
   if (!move) return;
 
+  e.preventDefault();
   queueMove(move);
 });
 
