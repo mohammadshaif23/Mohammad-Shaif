@@ -7,6 +7,10 @@ A simple accessible browser game (keyboard + touch controls):
 - Reach **12 points** to win.
 - Works with Arrow keys/WASD and on-screen direction buttons.
 
+## Live Website
+
+Play here: **https://mohammadshaif23.github.io/Mohammad-Shaif/**
+
 ## Run locally
 
 Open `index.html` in your browser.
