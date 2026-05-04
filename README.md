@@ -1,1 +1,42 @@
-# Mohammad-Shaif
+# Mohammad-Shaif-Snake game
+
+A simple accessible browser game (keyboard + touch controls):
+
+- Eat apples to gain **+1** point.
+- Hit rocks and lose **-1** point.
+- Reach **12 points** to win.
+- Works with Arrow keys/WASD and on-screen direction buttons.
+
+## Live Website
+
+Play here: **https://mohammadshaif23.github.io/Mohammad-Shaif/**
+
+## Run locally
+
+Open `index.html` in your browser.
+
+## Share with your teacher (GitHub Pages)
+
+1. Push this repo to GitHub.
+2. In GitHub: **Settings → Pages**.
+3. Under **Build and deployment**, choose:
+   - **Source:** Deploy from a branch
+   - **Branch:** `main` (or your default branch), folder `/root`
+4. Save and wait for deploy.
+5. Share the generated URL (usually `https://<username>.github.io/<repo-name>/`).
+
+
+## Quick Test Checklist
+
+- Open the live URL and verify the game loads.
+- Move with Arrow keys/WASD (page should not scroll while using arrows).
+- Use on-screen touch buttons on mobile.
+- Confirm apples add +1, rocks subtract -1, and game ends at 12 points.
+
+
+## If the site is not updating
+
+1. Commit your latest changes.
+2. Push to the same branch configured in **Settings → Pages** (usually `main`).
+3. Wait 1-3 minutes and refresh the live URL with a hard refresh (`Ctrl+Shift+R`).
+4. Check the **Actions** tab for deployment status if updates still do not appear.
